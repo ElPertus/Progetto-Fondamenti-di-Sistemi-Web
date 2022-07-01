@@ -79,7 +79,7 @@ aside{
     padding-left: 10px;
 }
 
-aside ul li:hover a{
+aside ul li a:hover {
     color: rgb(46, 46, 146);
     text-decoration: underline;
     font-weight: bold;
@@ -90,10 +90,9 @@ aside ul li a, main a{
     transition-duration: 0.2s;
 }
 
-main p:hover a{
+main p a:hover{
     color: rgb(46, 46, 146);
     text-decoration: underline;
-    font-weight: bold;
 }
 
 aside ul li:before {
