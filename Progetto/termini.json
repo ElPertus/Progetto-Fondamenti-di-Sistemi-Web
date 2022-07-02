@@ -1,7 +1,9 @@
 [{
     "Nome": "Traffico",
-    "Descrizione": "Parliamo in questo caso di traffico Web. Con ciò si intende l'insieme di richieste HTTP/S fatte da un qualsiasi utente, come parte client, ad un server Web richiedendo l'ottenimento di una determinata pagina. Grazie a questo dato possiamo sapere quanto il nostro sito viene visitato."
+    "Descrizione": "Parliamo in questo caso di traffico Web. Con ciò si intende l'insieme di richieste HTTP/S fatte da un qualsiasi utente, come parte client, ad un server Web richiedendo l'ottenimento di una determinata pagina. Grazie a questo dato possiamo sapere quanto il nostro sito viene visitato.",
+    "Codice":"traffico"
 },{
     "Nome": "Motore di Ricerca",
-    "Descrizione": "I motori di ricerca sono strumenti per la navigazione Web che consentono, ricevendo dall'utente una serie di parole chiave, di dare come risultato un elenco di pagine Web inerenti le parole chiave cercate. Alcuni esempi importanti di motori di ricerca sono Google Chrome, Mozilla Firefox, Microsoft Edge, Opera GX, ecc..."
+    "Descrizione": "I motori di ricerca sono strumenti per la navigazione Web che consentono, ricevendo dall'utente una serie di parole chiave, di dare come risultato un elenco di pagine Web inerenti le parole chiave cercate. Alcuni esempi importanti di motori di ricerca sono Google Chrome, Mozilla Firefox, Microsoft Edge, Opera GX, ecc...",
+    "Codice":"motore"
 }]
