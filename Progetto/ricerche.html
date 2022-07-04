@@ -20,6 +20,7 @@
         </header>
         <main id="app">
             <section>
+                <div style="overflow-x:auto;">
                 <table v-if="cercati!=null">
                     <tr>
                         <th><h2>Parola</h2></th>
@@ -30,6 +31,7 @@
                         <td class="text-secondary">{{parola.ricerche}}</td>
                     </tr>    
                 </table>
+                </div>
             </section>
             <section>
                 <form>
@@ -39,7 +41,7 @@
                         <label for="ricerca_selezionata" class="text-secondary">Ricerca da modificare:</label>
                         <select id="ricerca_selezionata" v-model="selected">
                           <option v-for="(parola, index) in cercati" v-bind:value="index">{{parola.nome + " " + parola.ricerche}}</option>
-                        </select>    
+                        </select>
                       </li>
                       <li>
                         <label for="nome" class="text-secondary">Parola:</label>

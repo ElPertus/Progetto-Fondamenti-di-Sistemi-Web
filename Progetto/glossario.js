@@ -7,7 +7,8 @@ const app = Vue.createApp({
     methods: {
         getData: function(){
             axios.get("./termini.json")
-              .then(response => {            
+              .then(response => {         
+                console.log(response.data);
                 this.vocabolario = response.data
               });
         }

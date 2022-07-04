@@ -39,7 +39,7 @@ div{
     margin-bottom: 20px;
 }
 
-img{
+main > div > img{
     max-height: 150px;
 }
 
@@ -71,6 +71,7 @@ h1:hover a{
 main, aside{
     margin-bottom: 20px;
     margin-left: 5%;
+    width: 90%;
 }
 
 aside{
@@ -110,6 +111,11 @@ section{
     margin-bottom: 20px;
 }
 
+section img{
+    width:100%;
+    margin: 10px 0;
+}
+
 input{
     color: rgb(46, 46, 146);
     background-color: white;
@@ -141,7 +147,9 @@ table, th, td {
 }
 
 table{
-    width: 100%;
+    margin-top: 20px;
+    max-width: 90%;
+    width: 90%;
 }
 
 th, td{
@@ -150,23 +158,32 @@ th, td{
 }
 
 @media screen and (min-width:768px){
+    .text-secondary, nav ul li a, aside ul li a{
+        font-size: 19px;
+    }
     main, aside{
         display: inline-block;
         vertical-align: top;
     }
 
     main{
-        width: 65%;
+        width: 60%;
         margin: 20px 10% 20px 5%;
     }
 
+    section img{
+        width:80%;
+        margin: 10px 0;
+    }
+
     aside{
-        width: 15%;
+        width: 20%;
         margin: 150px 0 0px 0;
         position: fixed;
     }
 
     table{
+        max-width: 65%;
         width:65%;
     }
 

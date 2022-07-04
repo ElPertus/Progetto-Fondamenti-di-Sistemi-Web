@@ -3,35 +3,35 @@
     <head>
         <meta charset=utf-8 />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="./CSS/style.css">
         <title>Progetto SEO - Glossario</title>
     </head>
-    <body class="bg-white">
+    <body class="bg-white" id="app">
         <header>
-            <h1><a href="index.html">SEO</a></h1>
+            <h1><a href="./index.html">SEO</a></h1>
             <nav>
                 <ul>
-                    <li><a href="#">Più Cercati</a></li>
-                    <li><a href="glossario.html">Glossario</a></li>
-                    <li><a href="altro.html">Più Cose</a></li>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./ricerche.html">Più Cercati</a></li>
+                    <li><a href="./glossario.html">Glossario</a></li>
+                    <li><a href="./altro.html">Più Cose</a></li>
+                    <li><a href="./index.html">Home</a></li>
                 </ul>
             </nav>
         </header>
-        <main id="app">
-            <div><img src="./img/barra.jpg" alt="barra di ricerca"/></div>
+        <main>
+            <div><img src="./img/libreria.PNG" alt=""/></div>
             <section v-for="parola in vocabolario">
-                <h2 class="text-primary" id="{{parola.Codice}}">{{parola.Nome}}</h2>
+                <h2 class="text-primary" v-bind:id="parola.Codice">{{parola.Nome}}</h2>
                 <p class="text-secondary">{{parola.Descrizione}}</p>
             </section>
             <form action="index.html">
-                <input type="submit" value="Torna alla Home" />
+                <input type="submit" value="Torna alla Home"/>
             </form>
         </main>
         <aside>
             <h2>Argomenti</h2>
             <ul>
-                <li v-for="parola in vocabolario"><a href="#{{parola.Codice}}">{{parola.Nome}}</a></li>
+                <li v-for="parola in vocabolario"><a href="#parola.Codice">{{parola.Nome}}</a></li>
             </ul>
         </aside>
         <footer>
