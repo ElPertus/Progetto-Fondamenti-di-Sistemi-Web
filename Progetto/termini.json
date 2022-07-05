@@ -1,45 +1,25 @@
 [{
 	"Nome": "Traffico",
     "Descrizione": "Parliamo in questo caso di traffico Web. Con ciò si intende l'insieme di richieste HTTP/S fatte da un qualsiasi utente, come parte client, ad un server Web richiedendo l'ottenimento di una determinata pagina. Grazie a questo dato possiamo sapere quanto il nostro sito viene visitato.",
-    "Codice": "traffico1"
+    "Codice": "traffico"
 },
 {
-	"Nome": "Traffico",
-    "Descrizione": "Parliamo in questo caso di traffico Web. Con ciò si intende l'insieme di richieste HTTP/S fatte da un qualsiasi utente, come parte client, ad un server Web richiedendo l'ottenimento di una determinata pagina. Grazie a questo dato possiamo sapere quanto il nostro sito viene visitato.",
-    "Codice": "pisello"
+	"Nome": "Organico",
+    "Descrizione": "Contenuto o risultato ottenuto non a pagamento. Nel nostro caso si tratta, in particolare di traffico verso un sito non ottenuto tramite pubblicità",
+    "Codice": "organico"
 },
 {
-	"Nome": "Traffico",
+	"Nome": "Social Media",
     "Descrizione": "Parliamo in questo caso di traffico Web. Con ciò si intende l'insieme di richieste HTTP/S fatte da un qualsiasi utente, come parte client, ad un server Web richiedendo l'ottenimento di una determinata pagina. Grazie a questo dato possiamo sapere quanto il nostro sito viene visitato.",
-    "Codice": "traffico3"
+    "Codice": "social"
 },
 {
-	"Nome": "Traffico",
+	"Nome": "URL",
     "Descrizione": "Parliamo in questo caso di traffico Web. Con ciò si intende l'insieme di richieste HTTP/S fatte da un qualsiasi utente, come parte client, ad un server Web richiedendo l'ottenimento di una determinata pagina. Grazie a questo dato possiamo sapere quanto il nostro sito viene visitato.",
-    "Codice": "traffico4"
+    "Codice": "url"
 },
 {
-	"Nome": "Traffico",
+	"Nome": "Query",
     "Descrizione": "Parliamo in questo caso di traffico Web. Con ciò si intende l'insieme di richieste HTTP/S fatte da un qualsiasi utente, come parte client, ad un server Web richiedendo l'ottenimento di una determinata pagina. Grazie a questo dato possiamo sapere quanto il nostro sito viene visitato.",
-    "Codice": "traffico5"
-},
-{
-	"Nome": "Traffico",
-    "Descrizione": "Parliamo in questo caso di traffico Web. Con ciò si intende l'insieme di richieste HTTP/S fatte da un qualsiasi utente, come parte client, ad un server Web richiedendo l'ottenimento di una determinata pagina. Grazie a questo dato possiamo sapere quanto il nostro sito viene visitato.",
-    "Codice": "traffico6"
-},
-{
-	"Nome": "Traffico",
-    "Descrizione": "Parliamo in questo caso di traffico Web. Con ciò si intende l'insieme di richieste HTTP/S fatte da un qualsiasi utente, come parte client, ad un server Web richiedendo l'ottenimento di una determinata pagina. Grazie a questo dato possiamo sapere quanto il nostro sito viene visitato.",
-    "Codice": "traffico7"
-},
-{
-	"Nome": "Traffico",
-    "Descrizione": "Parliamo in questo caso di traffico Web. Con ciò si intende l'insieme di richieste HTTP/S fatte da un qualsiasi utente, come parte client, ad un server Web richiedendo l'ottenimento di una determinata pagina. Grazie a questo dato possiamo sapere quanto il nostro sito viene visitato.",
-    "Codice": "traffico8"
-},
-{
-    "Nome": "Traffico",
-    "Descrizione": "Parliamo in questo caso di traffico Web. Con ciò si intende l'insieme di richieste HTTP/S fatte da un qualsiasi utente, come parte client, ad un server Web richiedendo l'ottenimento di una determinata pagina. Grazie a questo dato possiamo sapere quanto il nostro sito viene visitato.",
-    "Codice": "traffico9"
+    "Codice": "query"
 }]

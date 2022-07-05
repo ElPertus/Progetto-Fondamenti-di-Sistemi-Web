@@ -13,7 +13,7 @@
                 <ul>
                     <li><a href="./ricerche.html">Più Cercati</a></li>
                     <li><a href="./glossario.html">Glossario</a></li>
-                    <li><a href="./altro.html">Più Cose</a></li>
+                    <li><a href="./altro.html">Altro</a></li>
                     <li><a href="./index.html">Home</a></li>
                 </ul>
             </nav>
@@ -23,13 +23,13 @@
                 <div style="overflow-x:auto;">
                 <table v-if="cercati!=null">
                     <tr>
-                        <th><h2>Parola</h2></th>
-                        <th><h2>Ricerche Mensili</h2></th>
+                        <th scope="col"><h2>Parola</h2></th>
+                        <th scope="col"><h2>Ricerche Mensili</h2></th>
                     </tr>
                     <tr v-for="parola in cercati">
                         <td class="text-secondary">{{parola.nome}}</td>
                         <td class="text-secondary">{{parola.ricerche}}</td>
-                    </tr>    
+                    </tr>
                 </table>
                 </div>
             </section>
