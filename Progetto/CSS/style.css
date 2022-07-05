@@ -209,11 +209,12 @@ td {
         margin-top: 20px;
         margin-right: 5%;
         width: 30%;
+        position: static;
     }
     .scaf {
         display: inline-block;
         border: none;
-        position: relative;
+        position: static;
         width: 25%;
     }
     .piccolo {
