@@ -1,66 +1,79 @@
 <!DOCTYPE html>
 <html lang="it">
-    <head>
-        <meta charset=utf-8 />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <link rel="stylesheet" href="CSS/style.css">
-        <title>Progetto SEO - Ricerche</title>
-    </head>
-    <body class="bg-white">
-        <header>
-            <h1><a href="./index.html">SEO</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="./ricerche.html">Più Cercati</a></li>
-                    <li><a href="./glossario.html">Glossario</a></li>
-                    <li><a href="./altro.html">Altro</a></li>
-                    <li><a href="./index.html">Home</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main id="app">
-            <section>
-                <div style="overflow-x:auto;">
+
+<head>
+    <meta charset=utf-8 />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Progetto SEO - Ricerche</title>
+</head>
+
+<body class="bg-white">
+    <header>
+        <h1><a href="./index.html">SEO</a></h1>
+        <nav>
+            <ul>
+                <li><a href="./ricerche.html">Più Cercati</a></li>
+                <li><a href="./glossario.html">Glossario</a></li>
+                <li><a href="./altro.html">Altro</a></li>
+                <li><a href="./index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="app" class="cerca">
+        <section>
+            <div style="overflow-x:auto;">
                 <table v-if="cercati!=null">
                     <tr>
-                        <th scope="col"><h2>Parola</h2></th>
-                        <th scope="col"><h2>Ricerche Mensili</h2></th>
+                        <th scope="col">
+                            <h2>Parole Chiave</h2>
+                        </th>
+                        <th scope="col">
+                            <h2>Ricerche Mensili</h2>
+                        </th>
                     </tr>
                     <tr v-for="parola in cercati">
                         <td class="text-secondary">{{parola.nome}}</td>
                         <td class="text-secondary">{{parola.ricerche}}</td>
                     </tr>
                 </table>
-                </div>
-            </section>
-            <section>
-                <form>
-                    <h2>Modifica Ricerca</h2>
-                    <ul>
-                      <li>
+            </div>
+        </section>
+        <section>
+            <form>
+                <h2>Modifica Ricerca</h2>
+                <ul>
+                    <li>
                         <label for="ricerca_selezionata" class="text-secondary">Ricerca da modificare:</label>
                         <select id="ricerca_selezionata" v-model="selected">
-                          <option v-for="(parola, index) in cercati" v-bind:value="index">{{parola.nome + " " + parola.ricerche}}</option>
+                          <option v-for="(parola, index) in cercati" v-bind:value="index">{{parola.nome}}</option>
                         </select>
-                      </li>
-                      <li>
-                        <label for="nome" class="text-secondary">Parola:</label>
-                        <input v-model="cercati[selected].nome" type="text" name="nome" id="nome"/>    
-                      </li>
-                      <br/>
-                      <li>
+                    </li>
+                    <li>
+                        <label for="nome" class="text-secondary" id="par">Parola:</label>
+                        <input v-model="cercati[selected].nome" type="text" name="nome" id="nome" />
+                    </li>
+                    <br/>
+                    <li>
                         <label for="ricerche" class="text-secondary">Ricerche:</label>
-                        <input v-model="cercati[selected].ricerche" type="number" name="ricerche" id="ricerche"/>    
-                      </li>
-                    </ul>
-                  </form>
-            </section>
-        </main>
-        <footer>
-            <p>Progetto Fondamenti di Sistemi Web A.A. 2021-2022</p>
-            <p>Andrea Pertegato - Cristian Leonardo Postovan</p>
-        </footer>
-        <script src="https://unpkg.com/vue@3"></script>
-        <script src="./ricerche.js"></script>
-    </body>
+                        <input v-model="cercati[selected].ricerche" type="number" name="ricerche" id="ricerche" />
+                    </li>
+                </ul>
+            </form>
+        </section>
+    </main>
+    <aside class="bordo">
+        <img src="./img/cerca.PNG" alt="come la gente cerca" usemap="#rick">
+        <map name="rick">
+            <area shape="rect" coords="0 0 1000 1000" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" alt="never gonna give you up">
+        </map>
+    </aside>
+    <footer>
+        <p>Progetto Fondamenti di Sistemi Web A.A. 2021-2022</p>
+        <p>Andrea Pertegato - Cristian Leonardo Postovan</p>
+    </footer>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="./ricerche.js"></script>
+</body>
+
 </html>

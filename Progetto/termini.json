@@ -1,25 +1,46 @@
 [{
-	"Nome": "Traffico",
-    "Descrizione": "Parliamo in questo caso di traffico Web. Con ciò si intende l'insieme di richieste HTTP/S fatte da un qualsiasi utente, come parte client, ad un server Web richiedendo l'ottenimento di una determinata pagina. Grazie a questo dato possiamo sapere quanto il nostro sito viene visitato.",
-    "Codice": "traffico"
-},
-{
-	"Nome": "Organico",
-    "Descrizione": "Contenuto o risultato ottenuto non a pagamento. Nel nostro caso si tratta, in particolare di traffico verso un sito non ottenuto tramite pubblicità",
-    "Codice": "organico"
-},
-{
-	"Nome": "Social Media",
-    "Descrizione": "Parliamo in questo caso di traffico Web. Con ciò si intende l'insieme di richieste HTTP/S fatte da un qualsiasi utente, come parte client, ad un server Web richiedendo l'ottenimento di una determinata pagina. Grazie a questo dato possiamo sapere quanto il nostro sito viene visitato.",
-    "Codice": "social"
-},
-{
-	"Nome": "URL",
-    "Descrizione": "Parliamo in questo caso di traffico Web. Con ciò si intende l'insieme di richieste HTTP/S fatte da un qualsiasi utente, come parte client, ad un server Web richiedendo l'ottenimento di una determinata pagina. Grazie a questo dato possiamo sapere quanto il nostro sito viene visitato.",
-    "Codice": "url"
-},
-{
-	"Nome": "Query",
-    "Descrizione": "Parliamo in questo caso di traffico Web. Con ciò si intende l'insieme di richieste HTTP/S fatte da un qualsiasi utente, come parte client, ad un server Web richiedendo l'ottenimento di una determinata pagina. Grazie a questo dato possiamo sapere quanto il nostro sito viene visitato.",
-    "Codice": "query"
-}]
+        "Nome": "Traffico",
+        "Descrizione": "Parliamo in questo caso di traffico Web. Con ciò si intende l'insieme di richieste HTTP/S fatte da un qualsiasi utente, come parte client, ad un server Web richiedendo l'ottenimento di una determinata pagina. Grazie a questo dato possiamo sapere quanto il nostro sito viene visitato.",
+        "Codice": "traffico"
+    },
+    {
+        "Nome": "Organico",
+        "Descrizione": "Contenuto o risultato ottenuto non a pagamento. Nel nostro caso si tratta, in particolare di traffico verso un sito non ottenuto tramite pubblicità.",
+        "Codice": "organico"
+    },
+    {
+        "Nome": "Social Media",
+        "Descrizione": "Servizi di comunicazione che sfrutta il Web. Permettono di condividere su Internet contenuti testuali, immagini, audio e video.",
+        "Codice": "social"
+    },
+    {
+        "Nome": "Database",
+        "Descrizione": "Insieme di dati strutturati ovvero omogeneo per contenuti e formato, memorizzati in un computer, rappresentando di fatto la versione digitale di un archivio dati o schedario.",
+        "Codice": "DB"
+    },
+    {
+        "Nome": "URL",
+        "Descrizione": "Uniform Resource Locator, è una sequenza di caratteri che identifica univocamente l'indirizzo di una risorsa in rete, come ad esempio un documento, un'immagine, un video, tipicamente presente su un host server e resa accessibile a un client.",
+        "Codice": "url"
+    },
+    {
+        "Nome": "Query",
+        "Descrizione": "Interrogazione di una base di dati da parte di un utente.",
+        "Codice": "query"
+    },
+    {
+        "Nome": "Bot",
+        "Descrizione": "Noti anche come \"crawler\" o \"spider\", questi sono coloro che setacciano Internet per trovare contenuti.",
+        "Codice": "bot"
+    },
+    {
+        "Nome": "Caffeine",
+        "Descrizione": "Sistema di indicizzazione web di Google. Caffeine è l'indice o la raccolta di contenuti web, mentre Googlebot è il crawler che esce e trova il contenuto.",
+        "Codice": "caf"
+    },
+    {
+        "Nome": "Algoritmo",
+        "Descrizione": "Semplice procedura che tenta di risolvere un determinato problema applicando un certo numero di passi elementari detti istruzioni.",
+        "Codice": "alg"
+    }
+]
