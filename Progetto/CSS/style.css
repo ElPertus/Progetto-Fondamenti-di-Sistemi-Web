@@ -36,7 +36,7 @@ nav ul li:hover a {
     font-weight: bold;
 }
 
-div {
+main>div {
     text-align: center;
     margin-bottom: 20px;
 }

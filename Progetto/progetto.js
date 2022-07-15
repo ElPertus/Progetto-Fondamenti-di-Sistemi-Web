@@ -1,5 +1,5 @@
-const Home = {     
-    template:  `
+const Home = {
+    template: `
     <main>
         <div><img src="./img/barra.jpg" alt="" /></div>
         <section>
@@ -87,8 +87,8 @@ const Home = {
     `
 };
 
-const Altro = {     
-    template:  `
+const Altro = {
+    template: `
     <main>
         <div><img src="./img/barra.jpg" alt="" /></div>
         <section>
@@ -155,10 +155,10 @@ const Altro = {
 const Glossario = {
     data() {
         return {
-            vocabolario: null        
+            vocabolario: null
         }
-    }, 
-    template:  `
+    },
+    template: `
     <main class="piccolo">
         <div><img src="./img/libreria.PNG" alt="" /></div>
         <section v-for="parola in vocabolario">
@@ -174,15 +174,15 @@ const Glossario = {
     </aside> 
      `,
     methods: {
-        getData: function(){
+        getData: function() {
             axios.get("./termini.json")
-              .then(response => {         
-                console.log(response.data);
-                this.vocabolario = response.data
-              });
+                .then(response => {
+                    console.log(response.data);
+                    this.vocabolario = response.data
+                });
         }
     },
-    mounted(){
+    mounted() {
         this.getData();
     }
 
@@ -194,8 +194,8 @@ const Ricerche = {
             cercati: [{ "nome": "youtube", "ricerche": 1163000000 }, { "nome": "facebook", "ricerche": 1033000000 }, { "nome": "google", "ricerche": 513000000 }, { "nome": "whatsapp web", "ricerche": 490000000 }, { "nome": "weather", "ricerche": 400000000 }, { "nome": "never gonna give you up", "ricerche": 18564350 }],
             selected: 0
         }
-    },   
-    template:  `
+    },
+    template: `
     <main class="cerca">
         <section>
             <div style="overflow-x:auto;">
@@ -250,15 +250,15 @@ const Ricerche = {
 
 
 const routes = [
-  { path: '/', component: Home },
-  { path: '/altro', component: Altro },
-  { path: '/glossario', component: Glossario },
-  { path: '/ricerche', component: Ricerche }
+    { path: '/', component: Home },
+    { path: '/altro', component: Altro },
+    { path: '/glossario', component: Glossario },
+    { path: '/ricerche', component: Ricerche }
 ];
 
 const router = VueRouter.createRouter({
-  history: VueRouter.createWebHashHistory(),
-  routes
+    history: VueRouter.createWebHashHistory(),
+    routes
 });
 
 const app = Vue.createApp({});
