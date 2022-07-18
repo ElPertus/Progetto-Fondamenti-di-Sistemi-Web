@@ -9,35 +9,36 @@
 </head>
 
 <body class="bg-white">
-
-    <header>
-        <h1>
-            <router-link to="/">SEO</router-link>
-        </h1>
-        <nav>
-            <ul>
-                <li>
-                    <router-link to="/ricerche">Più Cercati</router-link>
-                </li>
-                <li>
-                    <router-link to="/glossario">Glossario</router-link>
-                </li>
-                <li>
-                    <router-link to="/altro">Altro</router-link>
-                </li>
-                <li>
-                    <router-link to="/">Home</router-link>
-                </li>
-            </ul>
-        </nav>
-    </header>
     <div id="app">
+        <header>
+            <h1>
+                <router-link to="/">SEO</router-link>
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <router-link to="/ricerche">Più Cercati</router-link>
+                    </li>
+                    <li>
+                        <router-link to="/glossario">Glossario</router-link>
+                    </li>
+                    <li>
+                        <router-link to="/altro">Altro</router-link>
+                    </li>
+                    <li>
+                        <router-link to="/">Home</router-link>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
         <router-view></router-view>
+
+        <footer>
+            <p>Progetto Fondamenti di Sistemi Web A.A. 2021-2022</p>
+            <p>Andrea Pertegato - Cristian Leonardo Postovan</p>
+        </footer>
     </div>
-    <footer>
-        <p>Progetto Fondamenti di Sistemi Web A.A. 2021-2022</p>
-        <p>Andrea Pertegato - Cristian Leonardo Postovan</p>
-    </footer>
     <script src="https://unpkg.com/vue@3"></script>
     <script src="https://unpkg.com/vue-router@4"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
